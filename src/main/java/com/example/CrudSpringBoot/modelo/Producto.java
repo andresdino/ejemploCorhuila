@@ -10,7 +10,7 @@ public class Producto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private String nombreProducto;
+    private String nombrePro;
     private int cantida;
     private float precioUnitario;
 
