@@ -25,6 +25,12 @@ public class Controler {
     private IPersonaService service;
 
 
+    @GetMapping("/buscar/{id}")
+    public String buscarId(@PathVariable int id, Model model){
+        Optional<Persona> persona = service.listarId(id);
+        model.addAttribute("persona", persona);
+        return "form";
+    }
 
     @GetMapping("/listar")
     public String listar(Model model){

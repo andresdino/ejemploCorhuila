@@ -12,6 +12,7 @@ public class Persona {
     private int id;
     private  String name;
     private  String telefono;
+    private String email;
 
     public Persona() {
 
